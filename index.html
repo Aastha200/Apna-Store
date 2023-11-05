@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Apna Store 🏪</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Apna Store</a>
+    <nav class="navbar">
+        <a href="#home" >home</a>
+        <a href="#features" >features</a>
+        <a href="#products" >products</a>
+        <a href="#categories" >categories</a>
+        <a href="#review" >review</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Find Items...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/1849139.webp" alt="">
+            <div class="content">
+                <h3>Bread</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+                <!-- <span class="price">Rs12/-</span> -->
+            </div>
+        </div>
+        <!-- <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/Pasta-1.jpg.crdownload" alt="">
+            <div class="content">
+                <h3>Pasta</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+                <span class="price">Rs12/-</span> 
+            </div>
+        </div> -->
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/moreitalybakery-05-scaled.jpg" alt="">
+            <div class="content">
+                <h3>Flour</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <!-- <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/925036247s.jpg" alt="">
+            <div class="content">
+                <h3>Soap</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div> -->
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/organic-basmati-rice.jpg" alt="">
+            <div class="content">
+                <h3>Rice</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="./assets/sugar_bag_x1.jpg" alt="">
+            <div class="content">
+                <h3>Sugar</h3>
+                <span class="price">Rs12/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+    <form action="" class="login-form">
+        <h3>Login</h3>
+        <input type="email" placeholder="Enter Mail..." class="box">
+        <input type="password" placeholder="Enter Password" class="box">
+        <p>Forgot Password <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create account</a></p>
+        <input type="submit" value="Login" class="btn">
+    </form>
+</header>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Fresh and <span> baked </span>for you</h3>
+        <p>Apna Store - Your Ultimate Grocery Destination</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+<section class="features" id="features">
+    <h1 class="heading" >Our <span>Features</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./assets/feature-img-1.png">
+            <h3>Good Quality</h3>
+            <p>Discover the finest selection of fresh, top-quality groceries carefully curated just for you.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="./assets/feature-img-2.png">
+            
+            <h3>Fast Delivery</h3>
+            <p>Experience lightning-fast delivery that brings your groceries to your doorstep in no time, ensuring your convenience.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="./assets/feature-img-3.png">
+            <h3>Easy Payment</h3>
+            <p>Enjoy hassle-free payments with a variety of secure and convenient payment options to make your shopping experience as smooth as possible.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+<section class="products" id="products">
+    <h1 class="heading">our <span>Products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./assets/product-2.png" alt="">
+                <h3>onion</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/product-4.png" alt="">
+                <h3>cabbage</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/product-5.png" alt="">
+                <h3>potato</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/sugar_bag_x1.jpg" alt="">
+                <h3>Sugar</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./assets/flour-wheat-wooden-flat-lay_176474-7338.avif" alt="">
+                <h3>Wheat</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/1849139.webp" alt="">
+                <h3>Bread</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/product-6.png" alt="">
+                <h3>Avocado</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/organic-basmati-rice.jpg" alt="">
+                <h3>Rice</h3>
+                <div class="price">rs4.99/-10.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="categories" id="categories">
+    <h1 class="heading">product <span>categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="./assets/cat-1.png" alt="">
+            <h3>Vegetables</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="./assets/cat-2.png" alt="">
+            <h3>Fruits</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="./assets/cat-3.png" alt="">
+            <h3>Dairy Products</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="./assets/cat-4.png" alt="">
+            <h3>Non-veg</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+</section>
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide box">
+                <img src="./assets/pic-1.png" alt="">
+                <p>I love shopping at Apna Store! The quality of the groceries is unmatched,
+                     and their fast delivery service is a game-changer. Plus, the user-friendly
+                      website makes it a breeze to find what I need. Highly recommended!</p>
+                <h3>Jack</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/pic-2.png" alt="">
+                <p>I've been a loyal customer of Apna Store for months now.
+                     Their range of products is impressive, and the prices are reasonable. 
+                     The delivery is always on time, and their customer service is top-notch.</p>
+                <h3>Lisa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/pic-3.png" alt="">
+                <p>Apna Store is my go-to place for all my grocery needs. 
+                    Their easy payment options make the process stress-free, and I appreciate the attention to quality.
+                     They've made my life so much easier!</p>
+                <h3>John</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="./assets/pic-4.png" alt="">
+                <p>I'm really impressed with Apna Store's reliability. They've never let me down,
+                     and I love the fact that I can find fresh and diverse groceries on their platform.
+                      It's a real time-saver!</p>
+                <h3>Emily</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Apna Store <i class="fas fa-shopping-basket"></i></h3>
+            <p>Apna Store is your one-stop destination for fresh and quality groceries delivered right to your doorstep.
+                
+                Discover the future of grocery shopping with Apna Store, where quality meets convenience.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+               
+            </div>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fas fa-phone"></i>+123-456-8990</a>
+            <a href="#" class="links"><i class="fas fa-phone"></i>+111-456-7990</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i>kamboj04@gmail.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marked-alt"></i>haryana,india-135101</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>review</a>
+        </div>
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="text"placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="./assets/payment.png" class="payment-img">
+    </div>
+    </div>
+</section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</html>
