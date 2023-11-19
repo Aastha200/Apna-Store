@@ -38,30 +38,31 @@ window.onscroll = () =>{
     loginForm.classList.remove('active');
     
 }
-var swiper = new Swiper(".product-slider", {
-    loop:true,
-    // slidesPerView: 1,
-    spaceBetween: 20,
-    autoplay: {
-        delay:7500,
-        disableOnIntraction:false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
+
+// var swiper = new Swiper(".product-slider", {
+//     loop:true,
+//     // slidesPerView: 1,
+//     spaceBetween: 20,
+//     autoplay: {
+//         delay:7500,
+//         disableOnIntraction:false,
+//     },
+//     centeredSlides: true,
+//     breakpoints: {
+//       0: {
+//         slidesPerView: 1,
        
-      },
-      768: {
-        slidesPerView: 2,
+//       },
+//       768: {
+//         slidesPerView: 2,
         
-      },
-      1020: {
-        slidesPerView: 3,
+//       },
+//       1020: {
+//         slidesPerView: 3,
        
-      },
-    },
-  });
+//       },
+//     },
+//   });
   var swiper = new Swiper(".review-slider", {
     loop:true,
     // slidesPerView: 1,
@@ -86,3 +87,15 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+  function validateForm() {
+   
+    var password = document.getElementById("password").value;
+    var passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordPattern.test(password)) {
+        alert("Password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character.");
+        return false;
+    }
+    return true;
+}
+  
+  
