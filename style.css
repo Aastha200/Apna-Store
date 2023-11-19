@@ -253,16 +253,20 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./assets/supermarket-banner-with-food_23-2149500957.jpg) no-repeat;
+    background: url(./assets/top-view-vegetables-fruits-bag.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
     padding-bottom: 10rem;
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
     
 }
 .home .content{
-    text-align: center;
-    width: 60rem;
+    text-align: right;
+    width: 80%;
 }
 .home .content h3{
     color: var(--black);
@@ -291,13 +295,12 @@ section{
     box-shadow: var(--box-shadow);
 }
 .features .box-container .box:hover{
-    outline: var(--outline-hover);
-    outline-offset: 0rem;
+    scale: 1.1;
 }
-.features .box-container .box img{
+/* .features .box-container .box img{
     margin: 1rem 0;
     height: 15rem;
-}
+} */
 .features .box-container .box h3{
     font-size: 2.5rem;
     line-height: 1.8;
@@ -309,7 +312,113 @@ section{
     color: var(--light-color);
     padding:1rem 0;
 }
-.products .product-slider{
+
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .product .box-container .box{
+    flex:1 1 30rem;
+    text-align: center;
+    padding:2rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+   
+  }
+  
+  .product .box-container .box img{
+    height: 20rem;
+  }
+  
+  .product .box-container .box .discount{
+    position: absolute;
+    top:1rem; left: 1rem;
+    background:rgba(0,255,0,.1);
+    color:var(--green);
+    padding:.7rem 1rem;
+    font-size: 2rem;
+  }
+  
+  .product .box-container .box .icons{
+    position: absolute;
+    top:.5rem; right:-6rem;
+  }
+  
+  .product .box-container .box:hover .icons{
+    right:1rem;
+  }
+  
+  .product .box-container .box .icons a{
+    display: block;
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color:var(--black);
+    background:rgba(0,0,0,.05);
+    border-radius: 50%;
+    margin-top: .7rem;
+  }
+  
+  .product .box-container .box .icons a:hover{
+    background:var(--green);
+    color:#fff;
+  }
+  
+  .product .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+  }
+  
+  .product .box-container .box .stars i{
+    padding:1rem .1rem;
+    font-size: 1.7rem;
+    color:gold;
+  }
+  
+  .product .box-container .box .price{
+    font-size: 2rem;
+    color:#333;
+    padding:.5rem 0;
+  }
+  
+  .product .box-container .box .price span{
+    font-size: 1.5rem;
+    color:#999;
+    text-decoration: line-through;
+  }
+  
+  .product .box-container .box .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+  
+  .product .box-container .box .quantity span{
+    padding:0 .7rem;
+    font-size: 1.7rem;
+  }
+  
+  .product .box-container .box .quantity input{
+    border:.1rem solid rgba(0,0,0,.3);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:var(--black);
+    padding:.5rem;
+    background:rgba(0,0,0,.05);
+  }
+  
+  .product .box-container .box .btn{
+    display: block;
+  }
+/* .products .product-slider{
     padding: 1rem;
 }
 .products .product-slider:first-child{
@@ -324,7 +433,7 @@ section{
     outline: var(--outline);
     box-shadow: var(--box-shadow);
     transition: .2s linear;
-    /* width: 500px; */
+    
 }
 .products .product-slider .box:hover{
     outline-offset: 0rem;
@@ -347,7 +456,7 @@ section{
     font-size: 1.7rem;
     color: var(--orange);
     padding: 5rem 0;
-}
+} */
 .categories .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
@@ -540,3 +649,114 @@ section{
     }
 }
 
+
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+    background-color: #eee;
+  }
+  
+  .banner-container .banner{
+    flex:1 1 40rem;
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .banner-container .banner img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .banner-container .banner .content{
+    position: absolute;
+    top:50%; left: 4%;
+    transform: translateY(-50%);
+  }
+  
+  .banner-container .banner .content h3{
+    font-size: 3rem;
+    color:var(--black);
+  }
+  
+  .banner-container .banner .content p{
+    font-size: 2rem;
+    color:#333;
+  }
+  
+  .banner-container .banner:hover img{
+    transform:scale(1.2) rotate(-5deg);
+  }
+  
+  .box-container1{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box1{
+    padding: 5px;
+    border: 1px solid black;
+    width: 270px;
+    overflow-x: hidden;
+}
+.box1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
+
+}
+.box1:hover img{
+    width: 130%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.btn1 h3{
+    font-size: 1.2rem;
+}
+.btn1 a{
+    border-width: 1px;
+}
+.AboutUs{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.About1{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.About1 img{
+    width: 50%;
+
+}
+.About1 p{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+marquee{
+    font-size: x-large;
+}
+.mar marquee{
+    font-size: 1.2rem;
+}
